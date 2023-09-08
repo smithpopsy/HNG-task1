@@ -1,64 +1,69 @@
-body, h1, p {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-size: 15pt;
     text-align: center;
+    margin: 0;
 }
 
-.container {
-    max-width: 600px;
-    margin: 100px auto 20px; 
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.image{
+  align-content: center;
+  justify-items: center;
+  align-content: center;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 3px 3px 2px black;
+  border-radius: 50%;
+}
+h2{
+  
+  font-size: 3rem;
+}
+#utc{
+  font-size: 3rem;
 }
 
-[data-testid="slackUserName"] {
-    font-size: 24px;
-    margin-bottom: 10px;
+.header{
+  height: 70px;
+  background-color: blue;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
-[data-testid="slackDisplayImage"] {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto 20px;
+
+footer{
+  height: 70px;
+  background-color: blue;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
-[data-testid="currentDayOfTheWeek"] {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #007bff; 
+@media (min-width:800px){
+  .image,img{
+    width: 250px;
+    height: 250px;
+  }
 }
 
-[data-testid="currentUTCTime"] {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #555;
+.track{
+  font-size: 2rem;
 }
 
-[data-testid="myTrack"] {
-    font-size: 18px;
-    margin-bottom: 20px;
+#today{
+  font-size: 1.5em;
 }
-
-[data-testid="githubURL"] {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+a{
+  font-weight: bold;
+  transition:all .3s ease-in-out;
+  padding: 8px;
+  border-radius: 4px;
 }
-
-[data-testid="githubURL"]:hover {
-    background-color: #0056b3; 
+a:hover{
+  background-color: blue;
+  color: white;
+  text-decoration: none;
 }

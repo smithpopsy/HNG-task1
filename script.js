@@ -1,16 +1,19 @@
+const date = new Date()
 
-function updateCurrentDay() {
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const currentDate = new Date();
-    const currentDay = daysOfWeek[currentDate.getUTCDay()];
-    const currentDayElement = document.querySelector('[data-testid="currentDayOfTheWeek"]');
-    currentDayElement.textContent = `Current day of the week: ${currentDay}`;
+const days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+
+const now = days[date.getDay()-1]
+
+
+
+const updateTime = () => {
+  const date = new Date()
+  timeUtc.textContent = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + ":" + date.getMilliseconds()
 }
-function updateCurrentUTCTime() {
-    const currentDate = new Date();
-    const currentUTCTimeMilliseconds = currentDate.getTime();
-    const currentUTCTimeElement = document.querySelector('[data-testid="currentUTCTime"]');
-    currentUTCTimeElement.textContent = `Current UTC Time: ${currentUTCTimeMilliseconds}`;
-}
-updateCurrentDay();
-updateCurrentUTCTime();
+
+const nowTag = document.getElementById('now')
+const timeUtc = document.getElementById('utc')
+
+nowTag.textContent=now
+
+setInterval(updateTime,1)

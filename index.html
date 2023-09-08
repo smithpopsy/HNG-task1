@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Task | Stage-one</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="container">
-        <h1 data-testid="slackUserName">Olumide Smith</h1>
-        <img src="imagehng/IMG_6374.png" alt="Olumide" data-testid="slackDisplayImage">
-        <p data-testid="currentDayOfTheWeek">Monday</p>    
-        <p data-testid="currentUTCTime">12:00 PM UTC</p>      
-        <p data-testid="myTrack">Track: Frontend</p>       
-        <a href="https://github.com/smithpopsy/HNG-task1" data-testid="githubURL">GitHub Repository</a>
-    </div>
-    <script src="script.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <title>Task 1</title>
+  
+  
+
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <!-- Project work -->
+  <div class="header">
     
+  </div>
+  <div class="name">
+    <h2 data-testid="slackUserName">Olumide Smith</h2>
+  </div>
+  <div class="image">
+    <img data-testid="slackDisplayImage" src="imagehng/IMG_6374.png" alt="olumide smith" />
+  </div>
+  
+  <div data-testid="myTrack">
+    <p class="track">Frontend</p>
+  </div>
+  
+  <div class="date">
+    <p id="now" data-testid="currentDayOfTheWeek">today</p>
+    <p id="utc" data-testid="currentUTCTime"></p>
+  </div>
+  
+  
+  <a href="https://github.com/Gideon-Buba/HNGx-task.git" data-testid="githubURL">GitHub Repository</a>
+  
+  <footer>
+    
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
